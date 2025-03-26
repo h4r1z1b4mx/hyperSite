@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { FolderTree, ChevronRight, ChevronDown, FileText, File, ListTodo, Code, Eye } from 'lucide-react';
+import { FolderTree, ChevronRight, ChevronDown, FileText, ListTodo, Code, Eye } from 'lucide-react';
 import Editor from "@monaco-editor/react";
 
 interface FileItem {
@@ -151,9 +151,9 @@ const BuilderPage = () => {
   );
 
   return (
-    <div className="h-screen bg-gray-900 flex overflow-hidden">
+    <div className="w-screen h-screen bg-gray-900 flex overflow-hidden">
       {/* Steps Panel */}
-      <div className="w-1/4 bg-gray-800 border-r border-gray-700 flex flex-col overflow-hidden">
+      <div className="w-1/3 bg-gray-800 border-r border-gray-700 flex flex-col overflow-hidden">
         <div className="p-6">
           <div className="flex items-center space-x-2 mb-6">
             <ListTodo className="h-6 w-6 text-indigo-400" />
@@ -195,7 +195,7 @@ const BuilderPage = () => {
       </div>
 
       {/* Content Area */}
-      <div className="w-1/2 flex flex-col overflow-hidden">
+      <div className="w-full flex flex-col overflow-hidden">
         {/* Prompt */}
         <div className="p-6 pb-0">
           <h3 className="text-lg font-semibold text-white mb-2">Your Prompt</h3>
